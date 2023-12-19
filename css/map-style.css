@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#sidebar {
+  background-color: #549D64;
+  color: white;
+  padding: 10px;
+  width: 50px;
+  z-index: 1000;
+  height: 60vh;
+  position: fixed;
+  top: 110px;
+  margin-left: 1.9%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sidebar i {
+  display: block;
+  margin-bottom: 10px;
+  height: 50px;
+  font-size: 2em;
+  cursor: pointer;
+  color: white;
+}
+
+#navbar {
+  background-color: #549D64;
+  color: white;
+  text-align: center;
+  position: fixed;
+  width: 96%;
+  left: 50%;
+  height: 8%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+#navbar-icons {
+  display: flex;
+  gap: 10px;
+}
+
+#map {
+  height: 100vh;
+  width: 100%;
+}
+
+#secondSidebar {
+  background-color: #E6E5E5;
+  padding: 10px;
+  width: 300px;
+  z-index: 1000;
+  height: 82vh;
+  position: fixed;
+  top: 110px;
+  left: 8%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 10px 8px #888888;
+}
+
+.secondSidebarItem {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.newSidebar {
+  background-color: #E6E5E5;
+  padding: 0;
+  width: 300px;
+  z-index: 1000;
+  height: 80vh;
+  position: fixed;
+  top: 110px;
+  left: 8%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 10px 8px #888888;
+  overflow-y: auto;
+}
+
+.newSidebar i {
+  display: block;
+  margin-bottom: 10px;
+  height: 50px;
+  font-size: 2em;
+  color: #000000;
+}
+
+#locate-button {
+  cursor: pointer;
+}
+.close-btn{
+position: absolute;
+top: 0;
+right: 0;
+border: none;
+border-radius: 50%;
+z-index: 100;
+}
+.title img{
+  width: 100%;
+  position: relative;
+}
+
+.checked {
+  color: orange;
+}
+
+.details-item{
+  height: auto;
+  width: 100%;
+  background-color: white;
+  border-bottom: solid 1px black;
+  color: black;
+  align-items: center;
+  padding: 5px 20px 5px 20px;
+}
+
+.details-container{
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+.newSidebar i{
+  margin-right: 5px;
+}
+

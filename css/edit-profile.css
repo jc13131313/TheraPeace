@@ -1,0 +1,159 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ADDBAF;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    height: 90vh;
+}
+
+
+
+.sidebar {
+    width: 100%;
+    max-width: 200px;
+    height: 75vh;
+    padding-top: 100px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #A1E9A6;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.sidebar-sticky {
+    position: sticky;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #A1E9A6;
+}
+
+.nav-link {
+    color: #333;
+}
+
+.nav-link:hover {
+    color: #0056b3;
+}z
+
+.active {
+    color: black;
+}
+
+.content {
+    flex: 1;
+    padding: 20px 50px 0 50px;
+    background-color: rgba(248, 248, 248, 0.8);
+    height: 75vh;
+    width: 100%;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        max-width: 91vw;
+        height: 150px;
+    }
+
+    .sidebar-sticky{
+        max-width: none;
+        height: 150px;
+        margin-top: -100px;
+    }
+}
+
+.circle {
+    height: 800px;
+    width: 800px;
+    background-color: #D0F8D2;
+    border-radius: 70%;
+    position: absolute;
+    bottom: -60%;
+    right: -20%;
+  }
+
+.top-design{
+    width: 0;
+	height: 0;
+	border-left: 700px solid #D0F8D2;
+	border-bottom: 550px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.content input{
+    border-radius: 25px;
+    height: 35px;
+    margin-bottom: 15px;
+    font-size: 20px;
+
+}
+
+button{
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
+    padding: 5px 10px 5px 10px;
+    border-radius: 25px;
+    background-color: #BFBABA;
+}
+
+.name-title{
+    font-size: 30px;
+    width: 100%;
+}
+
+.name-title p{
+    font-size: 15px;
+    margin-left: 40px;
+}
+
+label{
+    font-size: 20px;
+}
+.sec-form{
+    padding: 0 100px 0 100px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    vertical-align: middle;
+    text-align: center;
+    color: transparent;
+    transition: all .3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.profile-pic:hover {
+    background-color: rgba(0,0,0,.5);
+    z-index: 10000;
+    color: #fff;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+.profile-pic span {
+    display: inline-block;
+}
+
+form input[type="file"] {
+          display: none;
+          cursor: pointer;
+ }

@@ -1,0 +1,47 @@
+.container-fluid{
+    background-color: #D0F8D2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+
+.navbar-brand{
+    height: 70px;
+}
+
+.nav-item{
+    font-size: 20px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+
+
+.navbar .nav-link{
+    position: relative;
+  }
+  .navbar .nav-link::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #7EE383;
+    width: 0%;
+    content: "";
+    height: 5px;
+    transition: all 0.5s;
+  }
+  .navbar .nav-link:hover::after,
+  .navbar .nav-link.active::after {
+    width: 100%;
+  }
+
+  .right-btn{
+    font-size: 35px;
+    margin-left: 15px;
+    color: gray;
+    cursor: pointer;
+}

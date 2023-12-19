@@ -1,0 +1,229 @@
+body{
+    line-height: 1.6;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+	width: 15px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 3px solid #F5F5F5;
+	border-radius: 10px;
+	background-color: #FFF;
+	background-image: -webkit-gradient(linear,
+									   40% 0%,
+									   75% 84%,
+									   from(#7EE383),
+									   to(#A1E9A6),
+									   color-stop(.6,#7EE383))
+}
+.whole-container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #7EE383;
+  }
+  
+section{
+    height: 100vh;
+    width: 100%;
+}
+
+
+section#first-section{
+    background-color: #F3F5F9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+
+  section#second-section{
+    background-color: #F3F5F9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+
+
+  .container-copright {
+    width: 100%;
+    text-align: center;
+  }
+
+  .advert{
+    height: 60vh;
+    width: 30vh;
+    background-color: #CFD7F8;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+
+  .aboutthera{
+    height: 100%;
+    width: 100%;
+ 
+  }
+
+  .aboutthera p{
+    text-align: left;
+
+    font-size: 16px;
+  }
+
+  @media (max-width:1190px){
+   
+
+    .aboutthera p{
+        font-size: 13px;
+    }
+
+    .mission-circle{
+        margin-left: -50px;
+    }
+  }
+
+  @media (max-width:992px){
+   
+
+    .advert {
+        width: 80%;
+        height: 20vh;
+    }
+    
+    .aboutthera p{
+        font-size: 12px;
+        margin-left: -50px;
+    }
+
+    .mission-circle{
+        margin-left: -150px;
+        max-height: 350px;
+        max-width: 350px;
+        font-size: small;
+    }
+
+
+    .vision-circle{
+        max-height: 350px;
+        max-width: 350px;
+        font-size: small;
+    }
+  }
+
+
+
+
+
+  @media (max-width:794px){
+   
+
+    .aboutthera p{
+        font-size: 10px;
+        margin-left: -50px;
+    }
+  }
+
+  @media (max-width:574px){
+   
+    .mission-circle{
+        margin-left: 0;
+    }
+  }
+
+  
+
+
+
+
+
+  .mission-circle{
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    background-color: #4FC8DC;
+    border:solid 4px #BFBABA;
+
+  }
+
+  .mission-circle img{
+    height: 130px;
+    border-radius: 50%;
+    margin-left: 300px;
+    margin-top: -20px;
+  }
+
+  .vision-circle{
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    background-color: #FFCBE9;
+    border:solid 4px #F9EAE3;
+  }
+
+  .vision-circle img{
+    height: 130px;
+    border-radius: 50%;
+    margin-left: 300px;
+    margin-top: -20px;
+  }
+
+  .mission-circle p, .vision-circle p{
+    margin-top: 20px;
+    font-size: larger;
+    padding: 0 10px 0 10px;
+  }
+
+  .mission-circle h1, .vision-circle h1{
+    margin-top: -50px;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .navbar .nav-link{
+    position: relative;
+  }
+  .navbar .nav-link::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #7EE383;
+    width: 0%;
+    content: "";
+    height: 5px;
+    transition: all 0.5s;
+  }
+  .navbar .nav-link:hover::after,
+  .navbar .nav-link.active::after {
+    width: 100%;
+  }
+
+.right-btn{
+    font-size: 35px;
+    margin-left: 15px;
+    color: gray;
+    cursor: pointer;
+}

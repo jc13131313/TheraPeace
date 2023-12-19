@@ -1,0 +1,103 @@
+.right-page {
+    /* fallback for old browsers */
+    background: #A1E9A6;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: #7EE383;
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #7EE383;
+    }
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .right-page {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+    }
+form {
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 50px;
+        height: 70vh;
+        text-align: center;
+    }
+    
+form input {
+        background-color: #eee;
+        border: none;
+        padding: 12px 15px;
+        margin: 8px 0;
+        width: 40%;
+    }
+
+    .form-logo{
+        height: 50px;
+        position: absolute;
+        left: 1%;
+        top: 2%;
+        background-color: #A1E9A6;
+        border-radius: 20px;
+    }
+
+    .other-lo{
+        height: 250px;
+        margin-left: 100px;
+    }
+
+    .right-page h1{
+        font-weight: bold;
+        margin: 0;
+        text-shadow: 3px 3px #333;
+        margin-left: 70px;
+        margin-top: 100px;
+        color: white;
+    }
+form h1 {
+        font-weight: bold;
+        margin: 0;
+    }
+
+
+.btn {
+        border-radius: 30px;
+        border: 1px solid #A1E9A6;
+        background-color: #A1E9A6;
+        color: #000;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 12px 45px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: transform 80ms ease-in;
+    }
+
+    .btn:active {
+        transform: scale(0.95);
+    }
+    
+    .btn:focus {
+        outline: none;
+    }
+
+    p {
+	font-size: 14px;
+	font-weight: 100;
+    color: #000;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 100px 30px 100px;
+    margin-left: 130px;
+}
+
+.form-control{
+    background-color: white;
+}
